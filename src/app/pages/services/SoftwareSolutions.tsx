@@ -25,16 +25,7 @@ const softwareProjects = [
     image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200",
     features: ["Sales Pipeline", "Contact Management", "Email Automation", "Analytics Dashboard"],
   },
-  {
-    id: 3,
-    title: "Hospital Management System",
-    client: "MediCare Hospital Network",
-    description: "Created an integrated hospital management solution covering patient records, appointments, billing, and pharmacy management.",
-    technologies: ["ASP.NET Core", "Vue.js", "SQL Server", "Azure"],
-    deliveryDate: "October 2025",
-    image: "https://images.unsplash.com/photo-1504439904031-93ded9f93e4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200",
-    features: ["Patient Records", "Appointment System", "Billing Module", "Pharmacy Management"],
-  },
+
   {
     id: 4,
     title: "Supply Chain Management Software",
@@ -54,16 +45,6 @@ const softwareProjects = [
     deliveryDate: "August 2025",
     image: "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200",
     features: ["Student Enrollment", "Attendance Tracking", "Grade Management", "Parent Portal"],
-  },
-  {
-    id: 6,
-    title: "Inventory & Point of Sale System",
-    client: "RetailMax Stores",
-    description: "Developed an integrated POS and inventory management system with multi-location support and real-time stock tracking.",
-    technologies: ["React", "Express.js", "PostgreSQL", "Electron"],
-    deliveryDate: "July 2025",
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200",
-    features: ["POS Terminal", "Inventory Control", "Multi-location", "Sales Reports"],
   },
 ];
 

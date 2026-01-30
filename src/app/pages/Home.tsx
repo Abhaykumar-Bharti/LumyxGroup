@@ -3,7 +3,7 @@ import { ArrowRight, ChevronRight } from "lucide-react";
 import { Button } from "@/app/components/ui/button";
 import { ImageWithFallback } from "@/app/components/figma/ImageWithFallback";
 import { motion } from "motion/react";
-import logoImage from "@/assets/logo.png";
+import logoImage from "figma:asset/73a6f45899ba9764cdb681c05f8a0ce66cfe578e.png";
 
 const services = [
   {
@@ -80,28 +80,27 @@ export function Home() {
         {/* Rotating Earth Globe Background - Contained */}
         <div className="absolute inset-0 overflow-hidden">
           <motion.div 
-            className="absolute top-1/2 left-1/2 w-[100vw] h-[100vw] -translate-x-1/2 -translate-y-1/2 rounded-full"
+            className="absolute top-1/2 left-1/2 w-[150vw] h-[150vw] lg:w-[150vw] lg:h-[150vw] -translate-x-1/2 -translate-y-1/2"
             animate={{ rotate: 360 }}
             transition={{ 
               duration: 120, 
               repeat: Infinity, 
               ease: "linear" 
             }}
-            style={{ transformOrigin: "center center", clipPath: "circle(50% at 50% 50%)" }}
+            style={{ transformOrigin: "center center" }}
           >
             <ImageWithFallback
               src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=2000"
               alt="Technology background"
-              className="w-full h-full object-cover opacity-30"
+              className="w-full h-full object-cover opacity-40"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent" />
           </motion.div>
           
-          {/* Radial gradient overlay to black out corners */}
+          {/* Smooth radial gradient overlay to blend edges naturally */}
           <div 
             className="absolute inset-0 pointer-events-none"
             style={{
-              background: "radial-gradient(circle at center, transparent 0%, transparent 40%, #0A0A0A 70%, #0A0A0A 100%)"
+              background: "radial-gradient(ellipse 50% 50% at center, transparent 0%, transparent 20%, rgba(10,10,10,0.3) 40%, rgba(10,10,10,0.7) 60%, #0A0A0A 80%)"
             }}
           />
         </div>
@@ -191,8 +190,8 @@ export function Home() {
         </div>
       </section>
 
-       {/* Stats Section */}
-       <section className="relative border-b border-gray-800 bg-gradient-to-b from-[#0A0A0A] to-[#111111]">
+      {/* Stats Section */}
+      <section className="relative border-b border-gray-800 bg-gradient-to-b from-[#0A0A0A] to-[#111111]">
         <div className="max-w-[1440px] mx-auto px-6 lg:px-12 py-16">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
             {stats.map((stat, index) => (
